@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Simple Css Framework</title>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link type="text/css" rel="stylesheet" href="css/base.css">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div class="wpr">
+				<a href="#0" class="logo">ACE</a>
+				<div class="menuBar">
+					<div id="menuBtn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<ul>
+						<li><a href="#0">Home</a></li>
+						<li><a href="#0">About</a></li>
+						<li><a href="#0">Team</a></li>
+						<li><a href="#0">Services</a></li>
+						<li><a href="#0">Product</a></li>
+						<li><a href="#0">Career</a></li>
+						<li><a href="#0">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="wpr">
+			<div class="rw sp30">
+				<div class="lg6 md6 sm6">
+					<h1>h1. This is a very large header.</h1>
+					<h2>h2. This is a large header.</h2>
+					<h3>h3. This is a medium header.</h3>
+					<h4>h4. This is a moderate header.</h4>
+					<h5>h5. This is a small header.</h5>
+					<h6>h6. This is a tiny header.</h6>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="lg6 md6 sm6">
+					<div class="rw">
+						<div class="md6">
+							<div class="fmgp">
+								<label>Input Label</label>
+								<input type="text" class="fmctl" placeholder="Input Label" />
+							</div>
+						</div>
+						<div class="md6">
+							<div class="fmgp">
+								<label>Select Box</label>
+								<select class="fmctl">
+									<option value="husker">Husker</option>
+									<option value="starbuck">Starbucks</option>
+									<option value="hotdog">Hot Dog</option>
+									<option value="apollo">Apollo</option>
+								</select>
+							</div>
+						</div>
+						<div class="md12">
+							<div class="fmgp">
+								<label>Textarea Label</label>
+								<textarea class="fmctl" rows="4"></textarea>
+							</div>
+						</div>
+						<div class="md6">
+							<div class="fmgp">
+								<label>Choose Your Favorite</label>
+								<input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Red</label>
+								<input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Blue</label>
+							</div>
+						</div>
+						<div class="md6">
+							<div class="fmgp">
+								<label>Check These Out</label>
+								<input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+								<input id="Checkbox2" type="checkbox"><label for="Checkbox2">Checkbox 2</label>
+							</div>
+						</div>
+						<div class="md12">
+							<button type="button" class="btn largeBtn">Large Button</button>
+							<a href="#0" class="btn">Default Button</a>
+							<input type="button" class="btn smallBtn" value="Small Button" />
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				if ($(window).width() < 641) {
+					$('#menuBtn').click(function(){
+						$('.menuBar ul').toggleClass('show');
+						$('#menuBtn').toggleClass('open');
+					});
+					$('.menuBar a').click(function(){
+						$('.menuBar ul').toggleClass('show');
+						$('#menuBtn').toggleClass('open');
+					});
+				}
+			})
+		</script>
+	</body>
+</html>
